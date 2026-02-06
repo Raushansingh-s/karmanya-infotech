@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // MongoDB Connection
 // Replace with your actual connection string (Local or MongoDB Atlas)
-const MONGO_URI = 'mongodb://127.0.0.1:27017/karmanya_db';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/karmanya_db';
 
 mongoose.connect(MONGO_URI)
     .then(() => console.log('✅ MongoDB Connected Successfully'))
@@ -34,7 +34,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files from the current directory
-app.use(express.static(path.join(__dirname)));
+// Serve static files from the current directory
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'public'))); // Fallback if you move assets later
 
 // API Route for Contact Form
 app.post('/api/contact', async (req, res) => {
