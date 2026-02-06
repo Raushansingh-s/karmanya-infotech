@@ -66,9 +66,9 @@ app.post('/api/contact', async (req, res) => {
     }
 });
 
-// Fallback to serving index.html
+// Fallback to serving index.html only for routes that don't match files
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
