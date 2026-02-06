@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Reliable Web Hosting & Domain Registration Services by Karmanya Infotech. 99.9% Uptime and 24/7 Support in India.">
+    <title>Domain & Hosting Services | Karmanya Infotech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .domain-search-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 700px;
+            margin: 40px auto 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .search-box {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .domain-extension {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-top: 15px;
+            word-spacing: 15px;
+        }
+
+        .hosting-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .popular-plan {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+
+        @media (max-width: 992px) {
+            .popular-plan {
+                transform: none;
+                margin: 20px 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .search-box {
+                flex-direction: column;
+            }
+
+            .domain-search-container {
+                padding: 20px;
+            }
+
+            .search-box button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">Karmanya <span class="highlight">Infotech</span></a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="active">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-web.html">Web Development</a></li>
+                            <li><a href="#">App Development</a></li>
+                            <li><a href="#">Custom Software</a></li>
+                            <li><a href="#">IT Consulting</a></li>
+                            <li><a href="service-hosting.html">Domain & Hosting</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html">College ERP</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Hero -->
+    <section class="hero"
+        style="min-height: 500px; height: auto; background-image: linear-gradient(135deg, #0f172a 0%, #334155 100%);">
+        <div class="container hero-content" style="text-align: center; width: 100%;">
+            <h1>Secure Cloud <span class="highlight">Hosting</span></h1>
+            <p>Lightning fast servers with 99.9% uptime guarantee for your business.</p>
+
+            <!-- Domain Search UI -->
+            <div class="domain-search-container animate-fade-up">
+                <h3 style="color: white; margin-bottom: 25px; font-size: 1.5rem;">Find your perfect domain name</h3>
+                <div class="search-box">
+                    <input type="text" placeholder="Type your desired domain name...">
+                    <button class="btn btn-primary"
+                        style="background: var(--accent-color); border-color: var(--accent-color);">Search</button>
+                </div>
+                <div class="domain-extension">
+                    <span class="domain-tag">.com <span
+                            style="opacity: 0.7; font-size: 0.8em; margin-left: 5px;">?899</span></span>
+                    <span class="domain-tag">.in <span
+                            style="opacity: 0.7; font-size: 0.8em; margin-left: 5px;">?499</span></span>
+                    <span class="domain-tag">.co.in <span
+                            style="opacity: 0.7; font-size: 0.8em; margin-left: 5px;">?399</span></span>
+                    <span class="domain-tag">.org <span
+                            style="opacity: 0.7; font-size: 0.8em; margin-left: 5px;">?999</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hosting Plans -->
+    <section style="padding: 100px 0; background: var(--light-bg);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hosting Packages</h2>
+                <p>Choose the plan that fits your traffic needs.</p>
+            </div>
+
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+                <!-- Plan 1 -->
+                <div class="price-card animate-fade-up">
+                    <div class="price-header">
+                        <h3>Basic Shared</h3>
+                        <div class="price">Rs.1149</div>
+                        <span class="period">/ year</span>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">Great for personal blogs</p>
+                    </div>
+                    <ul class="feature-list-price">
+                        <li><i class="fas fa-check-circle"></i> 1 Website</li>
+                        <li><i class="fas fa-check-circle"></i> 10 GB SSD Storage</li>
+                        <li><i class="fas fa-check-circle"></i> Free SSL Certificate</li>
+                        <li><i class="fas fa-check-circle"></i> 5 Business Emails</li>
+                        <li><i class="fas fa-times-circle" style="color: #cbd5e1;"></i> Priority Support</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline"
+                        style="border-color: #e2e8f0; color: var(--text-color);">Get Started</a>
+                </div>
+
+                <!-- Plan 2 (Popular) -->
+                <div class="price-card popular animate-fade-up">
+                    <div class="popular-badge">Popular</div>
+                    <div class="price-header">
+                        <h3>Business Pro</h3>
+                        <div class="price">Rs.1299</div>
+                        <span class="period">/ year</span>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">Perfect for small businesses</p>
+                    </div>
+                    <ul class="feature-list-price">
+                        <li><i class="fas fa-check-circle"></i> 5 Websites</li>
+                        <li><i class="fas fa-check-circle"></i> 50 GB NVMe SSD</li>
+                        <li><i class="fas fa-check-circle"></i> Free SSL & Domain</li>
+                        <li><i class="fas fa-check-circle"></i> Unlimited Emails</li>
+                        <li><i class="fas fa-check-circle"></i> Daily Backups</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Buy Now</a>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="price-card animate-fade-up">
+                    <div class="price-header">
+                        <h3>VPS / Cloud</h3>
+                        <div class="price">Rs.1999</div>
+                        <span class="period">/ month</span>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">For high traffic portals</p>
+                    </div>
+                    <ul class="feature-list-price">
+                        <li><i class="fas fa-check-circle"></i> 2 vCPU Cores</li>
+                        <li><i class="fas fa-check-circle"></i> 4 GB RAM</li>
+                        <li><i class="fas fa-check-circle"></i> Dedicated IP Address</li>
+                        <li><i class="fas fa-check-circle"></i> Root Access</li>
+                        <li><i class="fas fa-check-circle"></i> 24/7 Priority Support</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline"
+                        style="border-color: #e2e8f0; color: var(--text-color);">Contact Sales</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Specs -->
+    <section class="section" style="padding: 80px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Server Technology</h2>
+                <p>We use the best stack to ensure speed and security.</p>
+            </div>
+
+            <div class="tech-grid">
+                <!-- Tech Card 1 -->
+                <div class="tech-card animate-fade-up">
+                    <div class="tech-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>LiteSpeed Server</h4>
+                    <p>Experience up to 50x faster page loads compared to standard Apache. Optimized for WordPress and
+                        PHP applications.</p>
+                </div>
+
+                <!-- Tech Card 2 -->
+                <div class="tech-card animate-fade-up" style="transition-delay: 0.1s;">
+                    <div class="tech-icon"><i class="fas fa-shield-virus"></i></div>
+                    <h4>Imunify360 Security</h4>
+                    <p>AI-driven security firewall that proactively stops malware, brute-force attacks, and unknown
+                        threats.</p>
+                </div>
+
+                <!-- Tech Card 3 -->
+                <div class="tech-card animate-fade-up" style="transition-delay: 0.2s;">
+                    <div class="tech-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h4>Daily JetBackups</h4>
+                    <p>Your data is safe with us. We automatically backup your site daily to remote off-site servers for
+                        disaster recovery.</p>
+                </div>
+
+                <!-- Tech Card 4 -->
+                <div class="tech-card animate-fade-up" style="transition-delay: 0.3s;">
+                    <div class="tech-icon"><i class="fas fa-headset"></i></div>
+                    <h4>24/7 Priority Support</h4>
+                    <p>Direct success to Level-2 engineers. Whether it's a DNS issue or code error, we are here to help
+                        anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Karmanya Infotech</h3>
+                <p>Empowering businesses with cutting-edge technology solutions.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <!-- Newsletter -->
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Get IT tips...">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services & Products</h4>
+                <ul>
+                    <li><a href="service-web.html">Web Development</a></li>
+                    <li><a href="products.html">College ERP</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                    <li><a href="service-hosting.html">Hosting</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Dev Nagar, Jaganpura, Patna-27</li>
+                    <li><i class="fas fa-phone"></i> +91 7858003965</li>
+                    <li><i class="fas fa-envelope"></i> info@karmanyainfotech.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Trust Badges Strip -->
+        <div class="container footer-badges">
+            <div class="badges-grid">
+                <div class="badge-item"><i class="fas fa-award"></i> ISO 9001:2015 Cert.</div>
+                <div class="badge-item"><i class="fas fa-rocket"></i> Startup India Recognized</div>
+                <div class="badge-item"><i class="fas fa-industry"></i> MSME Registered</div>
+                <div class="badge-item"><i class="fas fa-shield-alt"></i> 100% Secure Code</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Karmanya Infotech. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Widget -->
+    <a href="chat.html" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
