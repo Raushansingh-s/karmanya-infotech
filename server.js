@@ -34,9 +34,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files from the current directory
-// Serve static files from the current directory
-app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname, 'public'))); // Fallback if you move assets later
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname)); // Fallback for root files
 
 // API Route for Contact Form
 app.post('/api/contact', async (req, res) => {
